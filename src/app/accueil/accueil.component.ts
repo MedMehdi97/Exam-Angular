@@ -19,6 +19,7 @@ export class AccueilComponent implements OnInit {
     this.listPersonnelService.fetchRandom().subscribe(employe => {
       this.employe = employe;
     });
+    console.log("1");
   }
 
   delete(person: Person) {
